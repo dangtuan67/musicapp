@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Corner</title>
+    <link rel="icon" href="./assets/img/guitar-icon-vector-acoustic-musical-instrument-sign-isolated-on-white-background-trendy-flat-style-for-graphic-design-logo-web-site-social-media-2ATWBN8.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="musicplayer.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <!-- Header -->
+            <header>
+                <h4>Now playing:</h4>
+                <h2>String 57th & 9th</h2>
+            </header>
+
+            <!-- CD -->
+            <div class="cd">
+                <cd class="cd-thumb" style="background-image: url('https://yt3.googleusercontent.com/szyPYpR-sT0BiZwPndOALzhCaZM6H9xxVFHUZKhf8HCUuPGS7vcFOHKzhV3HtH7i_MqpFUVDfg=s900-c-k-c0x00ffffff-no-rj');">
+                </cd>
+            </div>
+
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="ti-reload"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="ti-control-skip-backward"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="ti-control-play icon-play"></i>
+                    <i class="ti-control-pause icon-pause"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="ti-control-skip-forward"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="ti-control-shuffle"></i>
+                </div>  
+            </div>
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+            <audio id="audio" src=""></audio>
+        </div>
+        <!-- Playlist -->
+        <div class="playlist">
+            
+        </div>
+    </div>
+    <script src="musicplayer.js"></script>
+</body>
+</html>
